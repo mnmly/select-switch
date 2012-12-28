@@ -1,6 +1,9 @@
 # select-switch
 
-Convert select box into switch ☞ [Demo]
+Convert select box into switch.
+No need to move around your cursor :)
+
+☞ [Demo]
 
 ![](http://c.mnmly.com/LpYK/Image%202012.12.28%2012:44:30%20PM.png) ![](http://c.mnmly.com/LppL/select-switch.gif)
 
