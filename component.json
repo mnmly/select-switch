@@ -1,0 +1,19 @@
+{
+  "name": "select-switch",
+  "repo": "mnmly/select-switch",
+  "description": "Convert select box into switch",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*",
+    "component/events": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "select-switch.css"
+  ]
+}

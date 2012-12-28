@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="build/build.css" type="text/css" media="screen" charset="utf-8">
+<style type="text/css" media="screen">
+    html, body { margin: 0; padding: 0; }
+    select { width: 100px; display: block; top: 50%; margin-top: -15px; }
+    .select-switch, select { position: relative; margin: 0 auto; top: 50%; margin-top: -15px; }
+</style>
+
+<script src="build/build.js"></script>
+
+<select>
+    <option value="0">Public</option>
+    <option value="1" selected=selected>Private</option>
+    <option value="2">Draft</option>
+    <option value="3">Scheduled</option>
+</select>
+
+
+<script type="text/javascript" charset="utf-8">
+
+    var $            = require( 'component-jquery' ),
+        SelectSwitch = require( 'select-switch' );
+    
+    $(function(){
+        window.selectSwitch = new SelectSwitch( $('select'), 21 );
+    });
+</script>
+
