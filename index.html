@@ -3,12 +3,11 @@
     html, body { margin: 0; padding: 0; height: 100%; }
     select { width: 100px; display: block; top: 50%; margin-top: -15px; }
     .select-switch, select { position: relative; margin: 0 auto; top: 50%; margin-top: -15px; }
-    footer { position: fixed; bottom: 0; width: 100%; text-align: center; }
+    footer { position: absolute; bottom: 0; width: 100%; text-align: center; }
     footer small{ margin-top: 70px; margin-bottom: 70px; font-size: .9em; display: block; font-family: monospace; text-align: center; color: hsl(0, 0%, 40%); }
     footer small a{ text-decoration: none; font-weight: bold; color: hsl(0, 0%, 20%); }
 </style>
 
-<script src="build/build.js"></script>
 
 <select>
     <option value="0">Public</option>
@@ -21,7 +20,7 @@
   <small>by <a href="http://mnmly.com" target="_blank">mnmly</a> / grab it on <a href="http://github.com/mnmly/select-switch/">github</a></small>
 </footer>
 
-
+<script src="build/build.js"></script>
 <script type="text/javascript" charset="utf-8">
 
     var $            = require( 'component-jquery' ),
