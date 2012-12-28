@@ -31,6 +31,9 @@ selectSwitch.value();
 selectSwitch.value( someOptionValue );
 ```
 
+## Todo
+
+- Need to cleanup the ever-growing labels at some intervals
 
 ## License
 
