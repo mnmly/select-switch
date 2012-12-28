@@ -75,7 +75,7 @@ SelectSwitch.prototype.addItem = function( item ) {
 
 SelectSwitch.prototype.bind = function() {
   this.events = events(this.el.get(0), this);
-  this.events.bind( 'click' );
+  this.events.bind( ( 'ontouchstart' in window )? 'touchstart' : 'click' );
 }
 
 /**
@@ -96,8 +96,12 @@ SelectSwitch.prototype.presetValue = function() {
  * Change the selectbox value, and shift labels.
  */
 
-SelectSwitch.prototype.onclick = function( e ) {
+SelectSwitch.prototype.ontouchstart = function( e ) {
+    this.onclick(e);
+}
 
+SelectSwitch.prototype.onclick = function( e ) {
+  if( e ){ e.preventDefault(); }
   var _this    = this,
       count    = this.indexCount++,
       shiftY   = -this.height * count;
