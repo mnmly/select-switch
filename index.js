@@ -75,7 +75,7 @@ SelectSwitch.prototype.addItem = function( item ) {
 
 SelectSwitch.prototype.bind = function() {
   this.events = events(this.el.get(0), this);
-  this.events.bind( ( 'ontouchstart' in window )? 'touchstart' : 'click' );
+  this.events.bind( ( 'ontouchstart' in window ) ? 'touchstart' : 'click' );
 }
 
 /**
