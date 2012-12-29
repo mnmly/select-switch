@@ -55,7 +55,7 @@ SelectSwitch.prototype.renderItems = function() {
       _itemHTML = '';
 
   this.selectbox.find( 'option' ).each( function( i, el ){
-    _this.addItem( '<li>' + $( el ).text() + '</li>' );
+    _this.addItem( '<li>' + o( el ).text() + '</li>' );
   } );
 };
 
