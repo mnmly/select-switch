@@ -28,7 +28,7 @@ function SelectSwitch( selectbox, height ){
 
   this.el          = o( '<div class="select-switch"/>' );
   this.optionList  = o( '<ul class="option-list"/>' );
-  this.selectbox   = selectbox;
+  this.selectbox   = o( selectbox );
   this.optionCount = this.selectbox.find( 'option' ).length;
   this.indexCount  = 0;
   
