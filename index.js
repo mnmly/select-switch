@@ -108,7 +108,8 @@ SelectSwitch.prototype.onclick = function( e ) {
       _newItem = this.optionList.find('li').eq( count ).clone();
   
   this.addItem( _newItem );
-  this.selectbox.prop('selectedIndex', count % this.optionCount ).trigger('change');
+  var newValue = this.selectbox.find('option').eq(count % this.optionCount).val()
+  this.selectbox.val(newValue).trigger('change');
   this.shift( shiftY );
 }
 
