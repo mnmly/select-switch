@@ -25,11 +25,10 @@
 <script src="build/build.js"></script>
 <script type="text/javascript" charset="utf-8">
 
-    var $            = require( 'component-jquery' ),
-        SelectSwitch = require( 'select-switch' );
-    
-    $(function(){
-        window.selectSwitch = new SelectSwitch( $('select'), 21 );
-    });
+    var SelectSwitch = require('select-switch')
+      , selectbox = document.querySelector('select')
+
+    window.selectSwitch = new SelectSwitch(selectbox, 21);
+
 </script>
 

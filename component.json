@@ -5,7 +5,7 @@
   "version": "0.0.2",
   "keywords": [],
   "dependencies": {
-    "component/jquery": "*",
+    "component/select": "*",
     "component/events": "*"
   },
   "development": {},
