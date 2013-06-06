@@ -1,13 +1,9 @@
 .select-switch {
-  border: 2px solid #000;
   width: 100px;
   height: 21px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  font-family: "Consolas", monospace;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 
 .select-switch:active .list-wrap {
