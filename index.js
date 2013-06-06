@@ -144,8 +144,12 @@ SelectSwitch.prototype.value = function(value) {
 
   if (typeof value !== 'undefined'){
 
-    var option = find(this.selectbox.options, function(item) { return value === item.value; })
-      , _index = this.selectbox.options.indexOf(option)
+    var _index = -1
+      , option = find(this.selectbox.options, function(item, i) {
+        var condition = value === item.value;
+        if (condition) _index = i;
+        return condition
+      })
       , _currentIndex = this.selectbox.selectedIndex;
 
     if( _index === -1 ){ return; }
